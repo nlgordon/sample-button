@@ -77,6 +77,7 @@ public class ButtonActivity extends Activity {
         if (keyCode == KeyEvent.KEYCODE_SPACE) {
             // Turn on the LED
             setLedValue(true);
+            Log.i(TAG, "Button pressed");
             return true;
         }
 
@@ -88,6 +89,7 @@ public class ButtonActivity extends Activity {
         if (keyCode == KeyEvent.KEYCODE_SPACE) {
             // Turn off the LED
             setLedValue(false);
+            Log.i(TAG, "Button released");
             return true;
         }
 
